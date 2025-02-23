@@ -1,8 +1,13 @@
-$col-black: #111111;
+$col-black: linear-gradient(
+  90deg,
+  rgb(163, 186, 248) 0%,
+  rgb(97, 167, 248) 50%,
+  rgb(44, 111, 255) 100%
+);
 $col-white: #ffffff;
-$col-orange: #cb450c;
-$col-boulder: #777777;
-$col-gray: #aaaaaa;
+$col-orange: #000000;
+$col-boulder: #ffffff;
+$col-gray: #ffffff;
 $font-bebas: "Bebas Neue", sans-serif;
 $font-sauce: "Open Sauce", arial;
 $gradient: linear-gradient(

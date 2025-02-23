@@ -1,3 +1,8 @@
+:root {
+  --font-playfair: 'Playfair Display', serif;
+  --font-poppins: 'Poppins', sans-serif;
+}
+
 %padding-home {
   padding-left: 4rem;
   padding-right: 4rem;
@@ -209,7 +214,8 @@
         }
 
         .first-word {
-          @extend %description-12;
+          @extend %description-17;
+          font-weight: bold;
           color: $col-boulder;
         }
       }
@@ -359,8 +365,8 @@
 
     @include media(">tablet") {
       display: flex;
-      padding-top: 24rem;
-      padding-bottom: 24rem;
+      // padding-top: 24rem;
+      // padding-bottom: 24rem;
     }
 
     &__top,
@@ -435,15 +441,16 @@
 
     .home__content {
       &__title {
-        @extend %description-12;
+        @extend %description-32;
         text-transform: uppercase;
         color: $col-boulder;
+        font-weight: bold;
       }
 
       &__desc {
-        @extend %description-16;
+        @extend %description-32;
         max-width: 95rem;
-        width: 100%;
+        width: 200%;
         @extend %links;
 
         a {
@@ -770,4 +777,31 @@
       }
     }
   }
+}
+.home__projects__project__link {
+  position: relative;
+  overflow: hidden;
+}
+
+.home__projects__project__link::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: var(--project-image);
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  z-index: -1;
+}
+
+.home__projects__project__link:hover::before {
+  opacity: 0.1;
+}
+
+.home__projects__project__title:hover ~ .project__link {
+  opacity: 1;
 }

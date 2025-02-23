@@ -3,8 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Seyi — Developer</title>
+    <title>Shubham Kumar</title>
     <meta name="title" content="Seyi — Developer" />
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
     <link rel="icon" href="/favicon.ico" />
     <meta
       name="description"
@@ -13,6 +14,12 @@
     <meta
       property="og:image"
       content="https://res.cloudinary.com/dmwfd0zhh/image/upload/v1625786788/Portfolio/Frame_5_lchlvc.jpg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Poppins:wght@400;500&display=swap&subset=latin"
+      rel="stylesheet"
     />
 
     <!-- Twitter -->
@@ -70,24 +77,87 @@
         <div class="home__nav__left">
           <div class="nav__name" nav-anim>
             <span>
-              Oluwadare <br />
-              Oluwaseyi</span
+              Shubham <br />
+              Kumar</span
             >
           </div>
 
           <div class="nav__folio hide-mobile" nav-anim>
-            <span>
-              Frontend Developer <br />
-              Folio / 2021 — 2024
-            </span>
+            <a
+              href="https://utfs.io/f/qrNhX5uLNRYD5lyYJgzUWgahfdreyB2KLPiqAoMHxC8Yulvk"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="resume-button c-button"
+            >
+              <span class="c-link">
+                <span class="c-link__inner">
+                  <span>View Resume</span>
+                  <span class="c-link__animated">View Resume</span>
+                </span>
+              </span>
+            </a>
           </div>
         </div>
 
         <div class="home__nav__right">
-          <div class="nav__folio hide-desktop" nav-anim>
-            Frontend Developer <br />
-            Folio / 2021 — 2024
+          <div class="home__nav__right">
+            <div class="nav__folio hide-desktop" nav-anim>
+              <a
+                href="https://utfs.io/f/qrNhX5uLNRYD5lyYJgzUWgahfdreyB2KLPiqAoMHxC8Yulvk"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="button c-button"
+              >
+                <span class="c-link">
+                  <span class="c-link__inner">
+                    <span>Resume</span>
+                    <span class="c-link__animated">Resume</span>
+                  </span>
+                </span>
+              </a>
+            </div>
           </div>
+
+          <style>
+            .resume-button {
+              display: inline-flex;
+              align-items: center;
+              padding: 0.5rem 1rem;
+              border-radius: 4px;
+              transition: all 0.3s ease;
+            }
+
+            .resume-button:hover {
+              transform: translateY(-1px);
+            }
+
+            .resume-button .c-link__inner {
+              display: flex;
+              align-items: center;
+              gap: 0.5rem;
+            }
+
+            .resume-button svg {
+              width: 1rem;
+              height: 1rem;
+              transition: transform 0.3s ease;
+            }
+
+            .resume-button:hover svg {
+              transform: translateY(2px);
+            }
+
+            /* Mobile specific styling */
+            .hide-desktop .resume-button {
+              padding: 0.4rem 0.8rem;
+              font-size: 1rem;
+            }
+
+            .hide-desktop .resume-button svg {
+              width: 0.9rem;
+              height: 0.9rem;
+            }
+          </style>
 
           <div class="nav__availability" nav-anim></div>
 
@@ -105,8 +175,8 @@
       <section class="home__hero">
         <div class="hero__title">
           <h1 class="mobile">
-            FRONT <br />
-            —— END <br />
+            SHUBHAM <br />
+            KUMAR ——<br />
             DEVELOPER
           </h1>
           <h1 class="hero__title__top overflow desktop">
@@ -118,14 +188,16 @@
                 data-scroll-position="top"
                 data-scroll-speed="7"
               >
-                <span class="hero__hover">F</span>
-                <span class="hero__hover">R</span>
-                <span class="hero__hover">O</span>
-                <span class="hero__hover">N</span>
-                <span class="hero__hover">T</span>
+                <span class="hero__hover">S</span>
+                <span class="hero__hover">H</span>
+                <span class="hero__hover">U</span>
+                <span class="hero__hover">B</span>
+                <span class="hero__hover">H</span>
+                <span class="hero__hover">A</span>
+                <span class="hero__hover">M</span>
               </span>
-              <span class="hero__title__dash desktop">——</span>
-              <span class="hero__title__dash tablet">——</span>
+              <!-- <span class="hero__title__dash desktop">——</span>
+              <span class="hero__title__dash tablet">——</span> -->
 
               <span
                 class="hero__title__right"
@@ -134,9 +206,11 @@
                 data-scroll-position="top"
                 data-scroll-speed="-7"
               >
-                <span class="hero__hover">E</span>
-                <span class="hero__hover">N</span>
-                <span class="hero__hover">D</span>
+                <span class="hero__hover">K</span>
+                <span class="hero__hover">U</span>
+                <span class="hero__hover">M</span>
+                <span class="hero__hover">A</span>
+                <span class="hero__hover">R</span>
               </span>
             </div>
           </h1>
@@ -156,15 +230,14 @@
               </h1>
               <div class="bottom__right">
                 <p class="hero__paragraph">
-                  <span class="first-word">About</span> &nbsp; I am a developer
-                  based in Manchester, UK focused on creating interactive
-                  digital experiences on the web, working with brands and
-                  industry leaders such as <span>Google Fonts,</span>
-                  <span>Paystack,</span> <span>Heva Health,</span>
-                  <span>Disney,</span> <span>Jelly,</span> and
-                  <span>Null</span>
-                  amongst others to achieve this.
+                  <span class="first-word">About</span> &nbsp; engineering
+                  student with a passion for improving project outcomes and
+                  gaining hands-on experience. skilled in real-time management,
+                  dynamic leadership, and applying technical skills. eager to
+                  contribute to team collaboration, enhance strategic planning,
+                  and develop efficient solutions in a practical setting.
                 </p>
+
                 <div class="hero__scroll">
                   <p>Scroll down</p>
                   <div class="c-infinite">
@@ -209,34 +282,25 @@
       </section>
 
       <section class="home__projects">
-        <span class="home__projects__line left">
-          <span></span>
-        </span>
+        <span class="home__projects__line left"><span></span></span>
 
+        <!-- To-Do App -->
         <div class="home__projects__project">
           <div class="home__projects__project__label">
-            <div class="label__inner label-1">
-              <p>
-                FEATURED <br />
-                PROJECTS (7)
-              </p>
-
-              <p>
-                ART DIRECTION / <br />
-                CREATIVE DEVELOPMENT
-              </p>
+            <div class="label__inner">
+              <p>WEB APP<br />TASK MANAGEMENT</p>
             </div>
           </div>
-
           <a
-            href="https://www.afrotype.com/tac"
+            href="https://havetodoapp.netlify.app"
             target="_blank"
             rel="noopener noreferrer"
             class="home__projects__project__link"
+            data-image="https://utfs.io/f/qrNhX5uLNRYDgNOfX95FiJ73qDY9kybxocvC1p6ZdmHztB25"
           >
             <h1
               class="home__projects__project__title"
-              data-scroll=""
+              data-scroll
               data-scroll-direction="horizontal"
               data-scroll-speed="8"
             >
@@ -244,38 +308,36 @@
                 <div class="title__main right">
                   <span
                     class="slide-up"
-                    data-content="Tac — GOOGLE FONTS COMMISSIONED TYPEFACE"
+                    data-content="To-Do App — Task Management Solution"
                     aria-hidden="true"
                   ></span>
-                  Tac — GOOGLE FONTS COMMISSIONED TYPEFACE
+                  To-Do App — Task Management Solution
                 </div>
               </span>
             </h1>
           </a>
-
           <div class="project__link">
             <a
-              href="https://www.afrotype.com/tac"
+              href="https://havetodoapp.netlify.app"
               target="_blank"
               rel="noopener noreferrer"
               class="c-button"
             >
               <span class="c-link">
                 <span class="c-link__inner">
-                  <span>
-                    Visit Site
-                    <span class="share-icon"
-                      ><svg
-                        width="20"
-                        height="20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M13.337 7.845l-7.173 7.173-1.178-1.179 7.172-7.172H5.837V5h9.166v9.167h-1.666V7.845z"
-                          fill="#777"
-                        /></svg
-                    ></span>
+                  <span>Visit Site</span>
+                  <span class="share-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.337 7.845l-7.173 7.173-1.178-1.179 7.172-7.172H5.837V5h9.166v9.167h-1.666V7.845z"
+                        fill="#777"
+                      />
+                    </svg>
                   </span>
                 </span>
               </span>
@@ -283,29 +345,25 @@
           </div>
         </div>
 
-        <span class="home__projects__line right">
-          <span></span>
-        </span>
+        <span class="home__projects__line right"><span></span></span>
 
+        <!-- Route System -->
         <div class="home__projects__project">
           <div class="home__projects__project__label">
             <div class="label__inner">
-              <p>
-                ART DIRECTION / <br />
-                E-COMMERCE DEVELOPMENT
-              </p>
+              <p>WEB APP<br />MAPPING TOOL</p>
             </div>
           </div>
-
           <a
-            href="https://www.pithafrica.com/"
+            href="https://routesystem.vercel.app"
             target="_blank"
             rel="noopener noreferrer"
             class="home__projects__project__link"
+            data-image="https://utfs.io/f/qrNhX5uLNRYDyNMZdI6ek0iU5f8VcEIGJCqvOSdTb3NP6n2r"
           >
             <h1
               class="home__projects__project__title"
-              data-scroll=""
+              data-scroll
               data-scroll-direction="horizontal"
               data-scroll-speed="-8"
             >
@@ -313,38 +371,36 @@
                 <div class="title__main left">
                   <span
                     class="slide-up"
-                    data-content="PITH AFRICA — CUSTOM E-COMM EXPERIENCE"
+                    data-content="Route System — Travel Time Calculator"
                     aria-hidden="true"
                   ></span>
-                  PITH AFRICA — CUSTOM E-COMM EXPERIENCE
+                  Route System — Travel Time Calculator
                 </div>
               </span>
             </h1>
           </a>
-
           <div class="project__link">
             <a
-              href="https://www.pithafrica.com/"
+              href="https://havetodoapp.netlify.app"
               target="_blank"
               rel="noopener noreferrer"
               class="c-button"
             >
               <span class="c-link">
                 <span class="c-link__inner">
-                  <span>
-                    Visit Site
-                    <span class="share-icon"
-                      ><svg
-                        width="20"
-                        height="20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M13.337 7.845l-7.173 7.173-1.178-1.179 7.172-7.172H5.837V5h9.166v9.167h-1.666V7.845z"
-                          fill="#777"
-                        /></svg
-                    ></span>
+                  <span>Visit Site</span>
+                  <span class="share-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.337 7.845l-7.173 7.173-1.178-1.179 7.172-7.172H5.837V5h9.166v9.167h-1.666V7.845z"
+                        fill="#777"
+                      />
+                    </svg>
                   </span>
                 </span>
               </span>
@@ -352,67 +408,62 @@
           </div>
         </div>
 
-        <span class="home__projects__line left">
-          <span></span>
-        </span>
+        <span class="home__projects__line right"><span></span></span>
 
-        <div class="home__projects__project right">
+        <!-- Shopping List App -->
+        <div class="home__projects__project">
           <div class="home__projects__project__label">
             <div class="label__inner">
-              <p>
-                ART DIRECTION / <br />
-                CREATIVE DEVELOPMENT
-              </p>
+              <p>WEB APP<br />PRODUCTIVITY</p>
             </div>
           </div>
           <a
-            href="https://2022.madebynull.com/"
+            href="https://theshoppinglist.netlify.app"
             target="_blank"
             rel="noopener noreferrer"
             class="home__projects__project__link"
+            data-image="https://utfs.io/f/qrNhX5uLNRYDfuzN79Z0rTC34XFRcMw7EYeQt12kngK9ZHzs"
           >
             <h1
               class="home__projects__project__title"
-              data-scroll=""
+              data-scroll
               data-scroll-direction="horizontal"
-              data-scroll-speed="10"
+              data-scroll-speed="6"
             >
               <span class="inline-ovh">
                 <div class="title__main right">
                   <span
                     class="slide-up"
-                    data-content="STUDIO NULL — RADIO NULL REWIND 2022"
+                    data-content="Shopping List — Grocery Management"
                     aria-hidden="true"
                   ></span>
-                  STUDIO NULL — RADIO NULL REWIND 2022
+                  Shopping List — Grocery Management
                 </div>
               </span>
             </h1>
           </a>
-
           <div class="project__link">
             <a
-              href="https://2022.madebynull.com/"
+              href="https://havetodoapp.netlify.app"
               target="_blank"
               rel="noopener noreferrer"
               class="c-button"
             >
               <span class="c-link">
                 <span class="c-link__inner">
-                  <span>
-                    Visit Site
-                    <span class="share-icon"
-                      ><svg
-                        width="20"
-                        height="20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M13.337 7.845l-7.173 7.173-1.178-1.179 7.172-7.172H5.837V5h9.166v9.167h-1.666V7.845z"
-                          fill="#777"
-                        /></svg
-                    ></span>
+                  <span>Visit Site</span>
+                  <span class="share-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.337 7.845l-7.173 7.173-1.178-1.179 7.172-7.172H5.837V5h9.166v9.167h-1.666V7.845z"
+                        fill="#777"
+                      />
+                    </svg>
                   </span>
                 </span>
               </span>
@@ -420,67 +471,62 @@
           </div>
         </div>
 
-        <span class="home__projects__line right">
-          <span></span>
-        </span>
+        <span class="home__projects__line right"><span></span></span>
 
-        <div class="home__projects__project right">
+        <!-- Password Generator -->
+        <div class="home__projects__project">
           <div class="home__projects__project__label">
             <div class="label__inner">
-              <p>
-                3D EXPLORATION / <br />
-                CREATIVE DEVELOPMENT
-              </p>
+              <p>WEB APP<br />SECURITY TOOL</p>
             </div>
           </div>
           <a
-            href="https://fayemi.design/"
+            href="https://passwdgenerateapp.netlify.app"
             target="_blank"
             rel="noopener noreferrer"
             class="home__projects__project__link"
+            data-image="https://utfs.io/f/qrNhX5uLNRYDLRFNfQ8hWVN6PaiygOUqxZfjLw0eAvESdpcz"
           >
             <h1
               class="home__projects__project__title"
-              data-scroll=""
+              data-scroll
               data-scroll-direction="horizontal"
-              data-scroll-speed="-8"
+              data-scroll-speed="-6"
             >
               <span class="inline-ovh">
                 <div class="title__main left">
                   <span
                     class="slide-up"
-                    data-content="GRP 256 — FOLIO FOR VISUAL DESIGNER"
+                    data-content="Password Generator — Secure Credentials"
                     aria-hidden="true"
                   ></span>
-                  GRP 256 — FOLIO FOR VISUAL DESIGNER
+                  Password Generator — Secure Credentials
                 </div>
               </span>
             </h1>
           </a>
-
           <div class="project__link">
             <a
-              href="https://fayemi.design/"
+              href="https://havetodoapp.netlify.app"
               target="_blank"
               rel="noopener noreferrer"
               class="c-button"
             >
               <span class="c-link">
                 <span class="c-link__inner">
-                  <span>
-                    Visit Site
-                    <span class="share-icon"
-                      ><svg
-                        width="20"
-                        height="20"
-                        fill="none"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path
-                          d="M13.337 7.845l-7.173 7.173-1.178-1.179 7.172-7.172H5.837V5h9.166v9.167h-1.666V7.845z"
-                          fill="#777"
-                        /></svg
-                    ></span>
+                  <span>Visit Site</span>
+                  <span class="share-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.337 7.845l-7.173 7.173-1.178-1.179 7.172-7.172H5.837V5h9.166v9.167h-1.666V7.845z"
+                        fill="#777"
+                      />
+                    </svg>
                   </span>
                 </span>
               </span>
@@ -488,12 +534,280 @@
           </div>
         </div>
 
-        <span class="home__projects__line left">
-          <span></span>
-        </span>
+        <span class="home__projects__line right"><span></span></span>
+
+        <!-- Currency Converter -->
+        <div class="home__projects__project">
+          <div class="home__projects__project__label">
+            <div class="label__inner">
+              <p>WEB APP<br />FINANCE TOOL</p>
+            </div>
+          </div>
+          <a
+            href="https://currencypricechecker.netlify.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="home__projects__project__link"
+            data-image="https://utfs.io/f/qrNhX5uLNRYDgOAgjq5FiJ73qDY9kybxocvC1p6ZdmHztB25"
+          >
+            <h1
+              class="home__projects__project__title"
+              data-scroll
+              data-scroll-direction="horizontal"
+              data-scroll-speed="8"
+            >
+              <span class="inline-ovh">
+                <div class="title__main right">
+                  <span
+                    class="slide-up"
+                    data-content="Currency Converter — Exchange Rates"
+                    aria-hidden="true"
+                  ></span>
+                  Currency Converter — Exchange Rates
+                </div>
+              </span>
+            </h1>
+          </a>
+          <div class="project__link">
+            <a
+              href="https://havetodoapp.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="c-button"
+            >
+              <span class="c-link">
+                <span class="c-link__inner">
+                  <span>Visit Site</span>
+                  <span class="share-icon">
+                    <svg
+                      width="20"
+                      height="20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M13.337 7.845l-7.173 7.173-1.178-1.179 7.172-7.172H5.837V5h9.166v9.167h-1.666V7.845z"
+                        fill="#777"
+                      />
+                    </svg>
+                  </span>
+                </span>
+              </span>
+            </a>
+          </div>
+          <span class="home__projects__line right"><span></span></span>
+        </div>
+
+        <!-- Image Preview Container -->
+        <div class="project-image-preview">
+          <img src="" alt="Project Preview" class="preview-image" />
+        </div>
+
+        <style>
+          /* Add these styles */
+          .project-image-preview {
+            position: fixed;
+            width: 400px;
+            height: 250px;
+            border-radius: 8px;
+            overflow: hidden;
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 0.2s ease-out,
+              transform 0.2s cubic-bezier(0.23, 1, 0.32, 1);
+            z-index: 1000;
+            transform: translate(-50%, -30px) scale(0.95);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            background: #fff;
+          }
+
+          .project-image-preview.visible {
+            opacity: 1;
+            transform: translate(-50%, -50%) scale(1);
+          }
+
+          .preview-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+          }
+
+          .home__projects__project__link:hover .preview-image {
+            transform: scale(1.02);
+          }
+
+          /* Ensure text visibility */
+          .home__projects__project__title {
+            color: #ffffff;
+            mix-blend-mode: normal;
+            position: relative;
+            z-index: 2;
+          }
+
+          .home__projects__project__link {
+            position: relative;
+            display: inline-block;
+          }
+          .project-image-preview {
+            position: fixed;
+            top: 0;
+            left: 0;
+            will-change: transform;
+            transition: transform 0.1s linear, opacity 0.2s ease;
+            pointer-events: none;
+            z-index: 1000;
+
+            max-width: min(300px, 90vw);
+            opacity: 0;
+          }
+
+          .project-image-preview.visible {
+            opacity: 1;
+          }
+        </style>
+
+        <script>
+          document.addEventListener("DOMContentLoaded", () => {
+            const projects = document.querySelectorAll(
+              ".home__projects__project__link"
+            );
+            const preview = document.createElement("div");
+            const previewImage = document.createElement("img");
+
+            preview.className = "project-image-preview";
+            previewImage.className = "preview-image";
+            preview.appendChild(previewImage);
+            document.body.appendChild(preview);
+
+            let currentImage = "";
+            let lastX = 0;
+            let lastY = 0;
+            let isScrolling = false;
+            let scrollTimeout;
+            let rafId;
+
+            // Track mouse position continuously
+            document.addEventListener("mousemove", (e) => {
+              lastX = e.clientX;
+              lastY = e.clientY;
+              if (!isScrolling) checkElementUnderMouse();
+            });
+
+            // Handle all scroll types
+            const handleScroll = () => {
+              isScrolling = true;
+              cancelAnimationFrame(rafId);
+              clearTimeout(scrollTimeout);
+
+              rafId = requestAnimationFrame(() => {
+                checkElementUnderMouse();
+                scrollTimeout = setTimeout(() => (isScrolling = false), 100);
+              });
+            };
+
+            window.addEventListener("scroll", handleScroll, { passive: true });
+            window.addEventListener("wheel", handleScroll, { passive: true });
+
+            // Handle keyboard navigation
+            document.addEventListener("keydown", (e) => {
+              if (
+                [
+                  "Tab",
+                  "ArrowUp",
+                  "ArrowDown",
+                  "ArrowLeft",
+                  "ArrowRight",
+                ].includes(e.key)
+              ) {
+                checkElementUnderMouse();
+              }
+            });
+
+            projects.forEach((project) => {
+              project.addEventListener("mouseenter", handleMouseEnter);
+              project.addEventListener("mouseleave", hidePreview);
+              project.addEventListener("focus", handleFocus);
+              project.addEventListener("blur", hidePreview);
+            });
+
+            function handleMouseEnter(e) {
+              showPreview(e.target, e.target.dataset.image);
+              positionPreview({ clientX: lastX, clientY: lastY });
+            }
+
+            function handleFocus(e) {
+              showPreview(e.target, e.target.dataset.image);
+              positionPreviewNearElement(e.target);
+            }
+
+            function showPreview(target, image) {
+              if (currentImage === image) return;
+              currentImage = image;
+              previewImage.src = image;
+              preview.classList.add("visible");
+            }
+
+            function checkElementUnderMouse() {
+              const elementUnderMouse = document.elementFromPoint(lastX, lastY);
+              const projectLink = elementUnderMouse?.closest(
+                ".home__projects__project__link"
+              );
+
+              if (projectLink) {
+                const img = projectLink.dataset.image;
+                if (img !== currentImage) showPreview(projectLink, img);
+                positionPreview({ clientX: lastX, clientY: lastY });
+              } else {
+                hidePreview();
+              }
+            }
+
+            function positionPreview(e) {
+              const offset = 20;
+              preview.style.transform = `translate(${e.clientX + offset}px, ${
+                e.clientY + offset
+              }px)`;
+              keepInViewport();
+            }
+
+            function positionPreviewNearElement(element) {
+              const rect = element.getBoundingClientRect();
+              const offset = 20;
+              preview.style.transform = `translate(${rect.right + offset}px, ${
+                rect.top
+              }px)`;
+              keepInViewport();
+            }
+
+            function keepInViewport() {
+              const rect = preview.getBoundingClientRect();
+              const viewport = {
+                width: window.innerWidth,
+                height: window.innerHeight,
+              };
+
+              if (rect.right > viewport.width) {
+                preview.style.transform = `translate(${
+                  viewport.width - rect.width - 20
+                }px, ${rect.top}px)`;
+              }
+              if (rect.bottom > viewport.height) {
+                preview.style.transform = `translate(${rect.left}px, ${
+                  viewport.height - rect.height - 20
+                }px)`;
+              }
+            }
+
+            function hidePreview() {
+              preview.classList.remove("visible");
+              currentImage = "";
+            }
+          });
+        </script>
       </section>
 
-      <section class="home__content">
+      <!-- <section class="home__content">
         <h2 class="home__content__title">COMMUNITY CONTRIBUTIONS</h2>
         <p class="home__content__desc">
           I have worked on some resources and tools; mostly for designers and
@@ -730,10 +1044,10 @@
         <span class="home__projects__line left">
           <span></span>
         </span>
-      </section>
+      </section> -->
 
       <section class="home__awards">
-        <div class="home__awards__left">
+        <!-- <div class="home__awards__left">
           <h2 class="awards__title">
             <span>AWARDS X </span><br />
             <span>RECOGNITION</span>
@@ -767,37 +1081,24 @@
             </div>
             <div class="awards__item" data-fade-in>MUZLI</div>
           </div>
-        </div>
+        </div> -->
 
         <div class="home__awards__right">
           <div class="home__awards__stack" data-fade-in>
             <h2 class="home__content__title">Interests</h2>
             <p class="home__content__desc">
-              Art Direction, Brand Strategy, Creative Development, E-Commerce,
-              Webflow, 3D/Augmented Reality, Web3 <br />
-              <a
-                href="https://github.com/oluwadareseyi"
-                target="_blank"
-                rel="noopener noreferrer"
-                >See my Github</a
-              >
+              Exploring latest AI tools,and always curious to learn new
+              things.<br />
+              Currently getting my hands on Rust and its implementation in real
+              world projects.
             </p>
           </div>
 
           <div class="home__awards__ice" data-fade-in>
-            <h2 class="home__content__title">ICEBREAKERS</h2>
+            <h2 class="home__content__title">Tech stack</h2>
             <p class="home__content__desc">
-              I listen to Electronic and Alt music all the time, you can see
-              what I'm currently listening to on this
-              <a
-                href="https://music.seyi.dev/"
-                target="_blank"
-                rel="noopener noreferrer"
-                >MICROSITE.</a
-              >
-              I like traveling and good food (work with me so I can fund this).
-              <button class="contact-scroll">GET IN TOUCH</button> to know more
-              about me.
+              C/C++, JavaScript, Next.js, React, TypeScript, Python, Tailwind
+              CSS, SQL.
             </p>
           </div>
         </div>
@@ -816,7 +1117,7 @@
 
         <div class="marquee">
           <a
-            href="mailto:oluwadareseyii@gmail.com?subject=Lets%20work%20together!&body=Hello%2C%20I%20think%20we%20need%20you%20to%20work%20on%2Fcollaborate%20this%20particular%20product...%20Reach%20out%20as%20soon%20as%20you%20can."
+            href="mailto:contactme.shubhamkumar@gmail.com?subject=Lets%20work%20together!&body=Hello%2C%20I%20think%20we%20need%20you%20to%20work%20on%2Fcollaborate%20this%20particular%20product...%20Reach%20out%20as%20soon%20as%20you%20can."
             class="marquee__wrap"
           >
             <div class="marquee__inner">
@@ -851,9 +1152,11 @@
         </div>
 
         <div class="home__contact__email">
-          <button class="email">oluwadareseyii@gmail.com</button>
+          <a href="mailto:contactme.shubhamkumar@gmail.com" class="email"
+            >CONTACTME.SHUBHAMKUMAR@GMAIL.COM</a
+          >
           <div class="to-copy">
-            <span>Click To Copy</span>
+            <span>LET’S TALK</span>
           </div>
         </div>
       </section>
@@ -863,7 +1166,7 @@
           <div class="footer__links">
             <div class="link__flex">
               <div class="link__flex__inner">
-                <a
+                <!-- <a
                   href="https://twitter.com/seyi__xo"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -875,18 +1178,18 @@
                       <span class="c-link__animated"> Twitter </span>
                     </span>
                   </span>
-                </a>
+                </a> -->
 
                 <a
-                  href="https://www.instagram.com/seyi.motion/"
+                  href="https://utfs.io/f/qrNhX5uLNRYD5lyYJgzUWgahfdreyB2KLPiqAoMHxC8Yulvk"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="c-button"
                 >
                   <span class="c-link">
                     <span class="c-link__inner">
-                      <span> INSTAGRAM </span>
-                      <span class="c-link__animated"> INSTAGRAM </span>
+                      <span> RESUME </span>
+                      <span class="c-link__animated"> RESUME </span>
                     </span>
                   </span>
                 </a>
@@ -896,7 +1199,7 @@
             <div class="link__flex">
               <div class="link__flex__inner second">
                 <a
-                  href="https://github.com/oluwadareseyi"
+                  href="https://github.com/shubham-kumr"
                   target="_blank"
                   rel="noopener noreferrer"
                   class="c-button"
@@ -910,7 +1213,7 @@
                 </a>
 
                 <a
-                  href="https://www.linkedin.com/in/oluwadareseyi/"
+                  href="https://www.linkedin.com/in/shubham-kumr/"
                   class="c-button"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -926,14 +1229,14 @@
             </div>
           </div>
         </div>
-        <div class="home__footer__left">
-          <p class="place">MANCHESTER, UK</p>
+        <!-- <div class="home__footer__left">
+          <p class="place">Greater Noida Uttar Pradesh, India</p>
           <div class="time">
             <span data-hour></span>
             <span class="flash">:</span>
             <span data-minute></span>
           </div>
-        </div>
+        </div> -->
         <p class="home__footer__right">
           Design by
           <a
