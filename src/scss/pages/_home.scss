@@ -283,7 +283,7 @@
     }
 
     &__desc {
-      @extend %description-32;
+      @extend %description-17;
       max-width: 95rem;
       width: 100%;
       @extend %links;
@@ -450,8 +450,11 @@
       &__desc {
         @extend %description-32;
         max-width: 95rem;
-        width: 200%;
+        width: 100%;
         @extend %links;
+        @include media(">phone") {
+          width: 200%;
+        }
 
         a {
           text-transform: uppercase;
