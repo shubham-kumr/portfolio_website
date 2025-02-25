@@ -5,7 +5,7 @@
   word-break: break-word;
 
   @include media("<=phone") {
-    font-size: 130px;
+    font-size: 115px;
   }
 }
 
@@ -16,6 +16,39 @@
 
   @include media("<=phone") {
     font-size: 80px;
+    word-break: break-word;
+  }
+}
+
+%title-96 {
+  font-size: 6rem;
+  font-family: $font-bebas;
+  letter-spacing: -0.025em;
+
+  @include media("<=phone") {
+    font-size: 48px;
+    word-break: break-word;
+  }
+}
+
+%title-64 {
+  font-size: 14.8rem;
+  font-family: $font-bebas;
+  letter-spacing: -0.025em;
+
+  @include media("<=phone") {
+    font-size: 32px;
+    word-break: break-word;
+  }
+}
+
+%title-20 {
+  font-size: 20rem;
+  font-family: $font-bebas;
+  letter-spacing: -0.025em;
+
+  @include media("<=phone") {
+    font-size: 24px;
     word-break: break-word;
   }
 }

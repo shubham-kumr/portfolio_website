@@ -202,3 +202,4 @@ export default class Home {
 }
 
 new Home(scroll);
+

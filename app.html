@@ -239,12 +239,8 @@
         <div class="hero__title">
           <h1 class="mobile">
             SHUBHAM <br />
-            KUMAR <br />
-            
-          </h1>
-          <h1 class="mobile">
-            <span class="text-orange-800 text-6xl">DEVELOPER/<br />ENGINEER</span> 
-            
+            KUMAR ——<br />
+            <span class="text-orange-800">DEVELOPER</span>
           </h1>
           <h1 class="hero__title__top overflow desktop">
             <div class="hero__title__top" title-overflow>
@@ -284,7 +280,7 @@
 
           <span class="hero__title__bottom overflow">
             <div class="hero__title__bottom">
-              <h1 class="bottom__left desktop" title-overflow>
+              <!-- <h1 class="bottom__left desktop" title-overflow>
                 <span class="hero__hover">D</span>
                 <span class="hero__hover">E</span>
                 <span class="hero__hover">V</span>
@@ -294,25 +290,18 @@
                 <span class="hero__hover">P</span>
                 <span class="hero__hover">E</span>
                 <span class="hero__hover">R</span>
-                <span class="hero__hover"> </span>
-                <span class="hero__hover">/</span>
-                <br />
-                <span class="hero__hover">E</span>
-                <span class="hero__hover">N</span>
-                <span class="hero__hover">G</span>
-                <span class="hero__hover">I</span>
-                <span class="hero__hover">N</span>
-                <span class="hero__hover">E</span>
-                <span class="hero__hover">E</span>
-                <span class="hero__hover">R</span>
-              </h1>
-              
+              </h1> -->
               <div class="bottom__right">
                 <p class="hero__paragraph">
-                  <span class="first-word">About</span> &nbsp; I am a dedicated software developer and analytical problem-solver with expertise in competitive programming and full-stack web development. My experience includes leading technical teams and delivering robust solutions under tight deadlines, supported by proficiency across modern technology stacks.
+                  <span class="first-word">About</span> &nbsp; engineering
+                  student with a passion for improving project outcomes and
+                  gaining hands-on experience. skilled in real-time management,
+                  dynamic leadership, and applying technical skills. eager to
+                  contribute to team collaboration, enhance strategic planning,
+                  and develop efficient solutions in a practical setting.
                 </p>
 
-                <!-- <div class="hero__scroll">
+                <div class="hero__scroll">
                   <p>Scroll down</p>
                   <div class="c-infinite">
                     <span class="c-link">
@@ -348,7 +337,7 @@
                       </span>
                     </span>
                   </div>
-                </div> -->
+                </div>
               </div>
             </div>
           </span>
@@ -356,15 +345,15 @@
       </section>
 
       <section class="home__projects">
-        <h2 class="section-heading" data-scroll data-scroll-speed="2">
-          <span class="heading-text">Projects</span>
-          <span class="heading-line" aria-hidden="true"></span>
-        </h2>
         <span class="home__projects__line left"><span></span></span>
 
         <!-- To-Do App -->
         <div class="home__projects__project">
-          
+          <div class="home__projects__project__label">
+            <div class="label__inner">
+              <p>WEB APP<br />TASK MANAGEMENT</p>
+            </div>
+          </div>
           <a
             href="https://havetodoapp.netlify.app"
             target="_blank"
@@ -423,7 +412,11 @@
 
         <!-- Route System -->
         <div class="home__projects__project">
-          
+          <div class="home__projects__project__label">
+            <div class="label__inner">
+              <p>WEB APP<br />MAPPING TOOL</p>
+            </div>
+          </div>
           <a
             href="https://routesystem.vercel.app"
             target="_blank"
@@ -482,7 +475,11 @@
 
         <!-- Shopping List App -->
         <div class="home__projects__project">
-          
+          <div class="home__projects__project__label">
+            <div class="label__inner">
+              <p>WEB APP<br />PRODUCTIVITY</p>
+            </div>
+          </div>
           <a
             href="https://theshoppinglist.netlify.app"
             target="_blank"
@@ -673,7 +670,7 @@
           /* Add these styles */
           .project-image-preview {
             position: fixed;
-            width: 500px;
+            width: 400px;
             height: 250px;
             border-radius: 8px;
             overflow: hidden;
@@ -685,7 +682,6 @@
             transform: translate(-50%, -30px) scale(0.95);
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
             background: #fff;
-            border: 15px solid #fff;
           }
 
           .project-image-preview.visible {
@@ -710,7 +706,6 @@
             mix-blend-mode: normal;
             position: relative;
             z-index: 2;
-            
           }
 
           .home__projects__project__link {
@@ -873,114 +868,6 @@
             }
           });
         </script>
-        <div class="github-marquee" data-scroll data-scroll-speed="1">
-          <div class="marquee-wrapper">
-            <a 
-              href="YOUR_GITHUB_URL" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              class="marquee-content"
-              aria-label="Visit GitHub profile for more projects"
-            >
-              <div class="marquee-group">
-                <span>CHECKOUT GITHUB FOR MORE PROJECTS ✦ </span>
-                <span>CHECKOUT GITHUB FOR MORE PROJECTS ✦ </span>
-                <span>CHECKOUT GITHUB FOR MORE PROJECTS ✦ </span>
-                <span>CHECKOUT GITHUB FOR MORE PROJECTS ✦ </span>
-                <span>CHECKOUT GITHUB FOR MORE PROJECTS ✦ </span>
-                <span>CHECKOUT GITHUB FOR MORE PROJECTS ✦ </span>
-              </div>
-              <div class="marquee-group" aria-hidden="true">
-                <span>CHECKOUT GITHUB FOR MORE PROJECTS ✦ </span>
-                <span>CHECKOUT GITHUB FOR MORE PROJECTS ✦ </span>
-                <span>CHECKOUT GITHUB FOR MORE PROJECTS ✦ </span>
-                <span>CHECKOUT GITHUB FOR MORE PROJECTS ✦ </span>
-                <span>CHECKOUT GITHUB FOR MORE PROJECTS ✦ </span>
-                <span>CHECKOUT GITHUB FOR MORE PROJECTS ✦ </span>
-              </div>
-            </a>
-          </div>
-        </div>
-        
-        <style>
-        .github-marquee {
-          background: linear-gradient(45deg, #6b46c1, #553c9a);
-          /* padding: 1rem 0; */
-          margin: 3rem 0 0;
-          overflow: hidden;
-          position: relative;
-        }
-        
-        .marquee-wrapper {
-          display: flex;
-          width: fit-content;
-          animation: marquee-github 20s linear infinite;
-          will-change: transform;
-        }
-        
-        .marquee-content {
-          display: flex;
-          gap: 0;
-        }
-        
-        .marquee-group {
-          display: flex;
-          flex-shrink: 0;
-          justify-content: space-around;
-          min-width: 100%;
-          animation: scroll 20s linear infinite;
-        }
-        
-        @keyframes marquee-github {
-          from { transform: translateX(0) }
-          to { transform: translateX(-100%) }
-        }
-        
-        .marquee-content {
-          font-family: 'Bebas Neue', sans-serif;
-          font-size: 2rem;
-          color: white;
-          text-decoration: none;
-          text-transform: uppercase;
-          letter-spacing: 2px;
-          padding: 0.5rem 0;
-          display: flex;
-          white-space: nowrap;
-        }
-        
-        .marquee-content span {
-          position: relative;
-        }
-        
-        .marquee-content span::after {
-          content: '✦';
-          position: absolute;
-          right: -1rem;
-          color: #f6e05e;
-        }
-        
-        .marquee-content:hover {
-          color: #f6e05e;
-        }
-        
-        .marquee-content:hover .marquee-group {
-          animation-play-state: paused;
-        }
-        
-        @media (max-width: 768px) {
-          .marquee-content {
-            font-size: 2rem;
-          }
-          
-          .marquee-content span::after {
-            right: -1.5rem;
-          }
-          
-          /* .marquee-group {
-            gap: .5rem;
-          } */
-        }
-        </style>
       </section>
 
       <!-- <section class="home__content">
@@ -1223,12 +1110,48 @@
       </section> -->
 
       <section class="home__awards">
-        <div class="home__awards__left">
+        <!-- <div class="home__awards__left">
+          <h2 class="awards__title">
+            <span>AWARDS X </span><br />
+            <span>RECOGNITION</span>
+          </h2>
+          <div class="home__awards__table">
+            <div class="awards__item" data-fade-in>
+              Webby ⏤ 2024 Awards Honoree
+            </div>
+            <div class="awards__item" data-fade-in>
+              Awwwards ⏤ Site of the Day (x3)
+            </div>
+            <div class="awards__item" data-fade-in>
+              Awwwards ⏤ Developer Award (x3)
+            </div>
+            <div class="awards__item" data-fade-in>
+              Awwwards ⏤ Jury Member 2023
+            </div>
+            <div class="awards__item" data-fade-in>
+              Designnominees ⏤ Site of the Day
+            </div>
+
+            <div class="awards__item" data-fade-in>
+              2022 Figma Community Award ⏤ Nominee
+            </div>
+            <div class="awards__item" data-fade-in>Maxibestof</div>
+            <div class="awards__item" data-fade-in>Thegallery.io (x2)</div>
+            <div class="awards__item" data-fade-in>Klikkentheke ⏤ No 2326</div>
+            <div class="awards__item" data-fade-in>Klikkentheke ⏤ No 2492</div>
+            <div class="awards__item" data-fade-in>
+              The Ultra Index® ⏤ For storytelling experience
+            </div>
+            <div class="awards__item" data-fade-in>MUZLI</div>
+          </div>
+        </div> -->
+
+        <div class="home__awards__right">
           <div class="home__awards__stack" data-fade-in>
             <h2 class="home__content__title">Interests</h2>
             <p class="home__content__desc">
               Exploring latest AI tools,and always curious to learn new
-              things.
+              things.<br />
               Currently getting my hands on Rust and its implementation in real
               world projects.
             </p>
@@ -1272,67 +1195,6 @@
             </div>
           </div>
         </div>
-        
-
-        <div class="home__awards__right">
-          <div class="awards-svg-container">
-            <img 
-              src="/tech.svg" 
-              alt="Awards Illustration"
-              class="responsive-svg"
-            >
-          </div>
-        </div>
-        
-        <style>
-          /* Responsive SVG Container */
-          .awards-svg-container {
-            position: relative;
-            width: 100%;
-            max-width: 664px; /* Original SVG width */
-            margin: 0 auto;
-            padding: 20px;
-          }
-        
-          /* SVG Image Styling */
-          .responsive-svg {
-            width: 100%;
-            height: auto;
-            display: block;
-            object-fit: contain;
-          }
-        
-          /* Desktop */
-          @media (min-width: 1200px) {
-            .awards-svg-container {
-              max-width: 664px;
-              padding: 0;
-            }
-          }
-        
-          /* Tablet */
-          @media (max-width: 1199px) and (min-width: 768px) {
-            .awards-svg-container {
-              max-width: 80%;
-              padding: 15px;
-            }
-          }
-        
-          /* Mobile */
-          @media (max-width: 767px) {
-            .awards-svg-container {
-              max-width: 100%;
-              padding: 10px;
-            }
-          }
-        
-          /* Small Mobile */
-          @media (max-width: 480px) {
-            .awards-svg-container {
-              padding: 5px;
-            }
-          }
-        </style>
       </section>
 
       <section class="home__contact" id="contact">
@@ -1386,89 +1248,99 @@
           <a href="mailto:contactme.shubhamkumar@gmail.com" class="email"
             >CONTACTME.SHUBHAMKUMAR@GMAIL.COM</a
           >
+          <!-- <div class="to-copy">
+            <span>LET’S TALK</span>
+          </div> -->
         </div>
       </section>
 
       <footer class="home__footer" id="js-footer">
         <div class="home__footer__center">
-            <div class="footer__links">
-                <!-- <div class="link__flex">
-                    <div class="link__flex__inner">
-                        <a
-                            href="https://utfs.io/f/qrNhX5uLNRYD5lyYJgzUWgahfdreyB2KLPiqAoMHxC8Yulvk"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="c-button"
-                        >
-                            <span class="c-link">
-                                <span class="c-link__inner">
-                                    <i class="fas fa-file-pdf"></i>
-                                    <span class="c-link__animated"><i class="fas fa-file-pdf"></i></span>
-                                </span>
-                            </span>
-                        </a>
-                    </div>
-                </div> -->
-    
-                <div class="link__flex">
-                    <div class="link__flex__inner">
-                      <a
-                            href="https://utfs.io/f/qrNhX5uLNRYD5lyYJgzUWgahfdreyB2KLPiqAoMHxC8Yulvk"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="c-button"
-                        >
-                            <span class="c-link">
-                                <span class="c-link__inner">
-                                    <i class="fas fa-file-pdf"></i>
-                                    <span class="c-link__animated"><i class="fas fa-file-pdf"></i></span>
-                                </span>
-                            </span>
-                        </a>
+          <div class="footer__links">
+            <div class="link__flex">
+              <div class="link__flex__inner">
+                <!-- <a
+                  href="https://twitter.com/seyi__xo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="c-button"
+                >
+                  <span class="c-link">
+                    <span class="c-link__inner">
+                      <span> Twitter </span>
+                      <span class="c-link__animated"> Twitter </span>
+                    </span>
+                  </span>
+                </a> -->
 
-                        <a
-                            href="https://github.com/shubham-kumr"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            class="c-button"
-                        >
-                            <span class="c-link">
-                                <span class="c-link__inner">
-                                    <i class="fab fa-github"></i>
-                                    <span class="c-link__animated"><i class="fab fa-github"></i></span>
-                                </span>
-                            </span>
-                        </a>
-    
-                        <a
-                            href="https://www.linkedin.com/in/shubham-kumr/"
-                            class="c-button"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                        >
-                            <span class="c-link">
-                                <span class="c-link__inner">
-                                    <i class="fab fa-linkedin-in"></i>
-                                    <span class="c-link__animated"><i class="fab fa-linkedin-in"></i></span>
-                                </span>
-                            </span>
-                        </a>
-                    </div>
-                </div>
+                <a
+                  href="https://utfs.io/f/qrNhX5uLNRYD5lyYJgzUWgahfdreyB2KLPiqAoMHxC8Yulvk"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="c-button"
+                >
+                  <span class="c-link">
+                    <span class="c-link__inner">
+                      <span> RESUME </span>
+                      <span class="c-link__animated"> RESUME </span>
+                    </span>
+                  </span>
+                </a>
+              </div>
             </div>
-        </div>
-        <p class="home__footer__right">
-            Design by
-            <a
-                href="https://fayemi.design/"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
-                Isaac Fayemi
-            </a>
-        </p>
-    </footer>
 
+            <div class="link__flex">
+              <div class="link__flex__inner second">
+                <a
+                  href="https://github.com/shubham-kumr"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="c-button"
+                >
+                  <span class="c-link">
+                    <span class="c-link__inner">
+                      <span> GITHUB </span>
+                      <span class="c-link__animated"> GITHUB </span>
+                    </span>
+                  </span>
+                </a>
+
+                <a
+                  href="https://www.linkedin.com/in/shubham-kumr/"
+                  class="c-button"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span class="c-link">
+                    <span class="c-link__inner">
+                      <span> LINKEDIN </span>
+                      <span class="c-link__animated"> LINKEDIN </span>
+                    </span>
+                  </span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="home__footer__left">
+          <p class="place">Greater Noida Uttar Pradesh, India</p>
+          <div class="time">
+            <span data-hour></span>
+            <span class="flash">:</span>
+            <span data-minute></span>
+          </div>
+        </div> -->
+        <p class="home__footer__right">
+          Design by
+          <a
+            href="https://fayemi.design/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Isaac Fayemi
+          </a>
+        </p>
+      </footer>
     </main>
 
     <script src="js/index.js" type="module"></script>
