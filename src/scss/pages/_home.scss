@@ -1,6 +1,6 @@
 :root {
-  --font-playfair: 'Playfair Display', serif;
-  --font-poppins: 'Poppins', sans-serif;
+  --font-playfair: "Playfair Display", serif;
+  --font-poppins: "Poppins", sans-serif;
 }
 
 %padding-home {
@@ -72,7 +72,6 @@
         max-width: 200px;
         width: 100%;
         margin-left: auto;
-        
 
         br {
           display: none;
@@ -87,7 +86,6 @@
 
         @include media("<=phone") {
           margin-bottom: 2.4rem;
-          
 
           br {
             display: none;
@@ -118,10 +116,9 @@
             @extend %title-328;
             letter-spacing: -0.05em;
             word-wrap: break-word;
-            
+
             @include media(">phone") {
               display: none;
-              
             }
           }
         }
@@ -721,7 +718,6 @@
       .footer__links {
         @include media(">tablet") {
           display: flex;
-          
         }
 
         align-items: center;
@@ -800,7 +796,7 @@
 }
 
 .home__projects__project__link::before {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -903,7 +899,7 @@
 }
 
 /* Add Font Awesome CSS */
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css');
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css");
 
 /* Footer icon styles */
 .footer__links .c-button {
@@ -929,11 +925,15 @@
 }
 
 /* Specific icon adjustments */
-.fa-linkedin-in { transform: translateY(1px); }
-.fa-file-download { font-size: 1.3rem; }
+.fa-linkedin-in {
+  transform: translateY(1px);
+}
+.fa-file-download {
+  font-size: 1.3rem;
+}
 
 .section-heading {
-  font-family: 'Bebas Neue', sans-serif;
+  font-family: "Bebas Neue", sans-serif;
   font-size: 7rem;
   text-align: center;
   color: #ffffff;

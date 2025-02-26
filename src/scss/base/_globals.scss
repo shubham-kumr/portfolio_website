@@ -3,6 +3,7 @@ html {
   overscroll-behavior: none;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
+  scroll-behavior: smooth;
 
   @include media("<=phone") {
     font-size: calc(100vw / 550 * 10);
